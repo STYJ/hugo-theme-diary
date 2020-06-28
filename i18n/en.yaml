@@ -1,9 +1,9 @@
 - id: last_mod_on
-  translation: Last modified on {{ .Format "2006-01-02" }}
+  translation: Last modified on {{ .Format "2 January 2006" }}
 - id: format_date
-  translation: '{{ .Format "2006-01-02" }}'
+  translation: '{{ .Format "2 January 2006" }}'
 - id: format_date_tosec
-  translation: '{{ .Format "2006-01-02 15:04" }}'
+  translation: '{{ .Format "2 January 2006 15:04" }}'
 - id: next_link
   translation: Next
 - id: prev_link
@@ -25,4 +25,4 @@
 - id: draft
   translation: DRAFT
 - id: toc_title
-  translation: CATALOG
+  translation: Table of Contents
