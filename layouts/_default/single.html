@@ -33,19 +33,23 @@
                         {{ end }}
 
                         {{ if .Params.categories }}
+                            <br/>
+                            Categories
                             <i class="material-icons" style="">folder</i>
                                 <a href="{{ "/categories/" | relLangURL }}{{ .Params.categories | urlize }}">{{ .Params.categories }}</a>
-                                &nbsp;
                         {{ end }}
 
                         {{ if gt .Params.tags 0 }}
+                            <br/>
+                            Tags
                             <i class="material-icons" style="">label</i>
                             {{ range .Params.tags }}
                                 <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-                                &nbsp;
                             {{ end }}
                         {{ end }}
                         {{ if .Site.Params.enableReadingTime }}
+                            <br/>
+                            Reading Time
                             <i class="material-icons" style="">schedule</i>
                             {{ $readTime := mul (div (countwords .Content) 220.0) 60 }}
 
