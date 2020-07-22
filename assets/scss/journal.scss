@@ -899,6 +899,12 @@ a {
           border-radius: 5px;
           overflow: hidden;
         }
+        img[alt$="><"] {
+          display: block;
+          margin: auto;
+          float: none!important;
+        }
+
         @media screen and (max-width: $single-column-max-width) {
           font-size: $single-column-post-body-size;
         }
